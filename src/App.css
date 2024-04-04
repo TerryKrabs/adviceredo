@@ -1,38 +1,103 @@
 .App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#202632;
+  overflow: hidden;
+
+}
+
+.advice-card {
+  background-color: #313a49;
+  padding: 20px;
+  border-radius: 10px;
+  width: 450px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.advice-number {
+  color: hsl(150, 100%, 66%);
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.advice-text {
+  color: #ffffff; 
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-size: calc(10px + 2vmin);
+  font-weight: 700;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.advice-action-btn {
+  background-color:hsl(150, 100%, 66%);
+  border: none;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 195px;
+  position:absolute;
+}
+.divider{
+  width:444px;
+   height:16px;
+   display: flex;
+   justify-content: center;
+}
+.divider2{
+  width:6px;
+   height:16px;
+   display: flex;
+   justify-content: center;
+}
+.divider3{
+  width:6px;
+   height:16px;
+   display: flex;
+   justify-content: center;
+}
+
+#button :hover{
+  border: 20px  rgb(255, 255, 255);
+}
+@media screen and (max-width: 425px) {
+  .advice-card {
+    width: 300px; 
+
+  }
+
+  .advice-action-btn {
+    margin-left: 130px;
+  }
+  .divider{
+display: flex;
+justify-content: center;
+    overflow: hidden;
+     height:16px;
+  }
+  .divider2{
+    width:6px;
+     height:16px;
+  }
+  .divider3{
+    width:6px;
+     height:16px;
+  }
+
+}
+
+
+.action-icon {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 24px;
 }
